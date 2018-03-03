@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Nations Toolchest</title>
+<link rel="stylesheet" href="css/index.css" />
+<!--For Facebook-->
+<meta name="title" content="Nations Toolchest" />
+<meta name="description" content="Web frontend containing assistive tools for the Nations board game." />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115043311-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115043311-1');
+</script>
+</head>
+<body>
+<div class="sitetitle">Nations Dynasties Selector vAlpha</div>
+<label for="playerCount" >Number of players: </label>
+<input type="number" id="playerCountField" class="playerCountField">
+<input type="submit" value="Select Nations!" class="selectNationsButton">
+<div class="selectNationsResult"></div>
+<div class="debugResult"></div>
+<script src="script/nations_toolchest.js"></script>
+</body>
+</html>

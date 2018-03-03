@@ -1,0 +1,52 @@
+body {
+  width: 960px;
+}
+
+h1 {
+  font-family: "Georgia";
+}
+
+.footnote {
+  font-size: 14px;
+  width: 920px;
+}
+
+.sitetitle {
+  font-size: 48px;
+  font-family: "Georgia";
+  font-style: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sitesubtitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-family: "Georgia";
+}
+
+.small-info {
+  font-size: 18px;
+  font-family: "Georgia";
+}
+
+table.navbar {
+  width: 960px;
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #CCEEEE;
+  font-size: 24px;
+  font-family: "Georgia";
+}
+
+p {
+  font-size: 24px;
+  font-family: "Georgia";
+}
+
+li {
+  font-size: 24px;
+  font-family: "Georgia";
+}
