@@ -26,28 +26,32 @@ var invalidPairs = [
   ["Mongolia", "Portugal"],
 ]
 
-var selectNationsResult = document.querySelector('.selectNationsResult');
-var debugResult = document.querySelector('.debugResult');
 var playerCountField = document.querySelector('.playerCountField');
 var selectNationsButton = document.querySelector('.selectNationsButton');
+var selectNationsResult = document.querySelector('.selectNationsResult');
+var errorMessage = document.querySelector('.errorMessage');
 
 playerCountField.focus();
 
 function selectNations() {
   var playerCount = Number(playerCountField.value);
   if (playerCount < 1 || playerCount > 5) {
-    selectNationsResult.textContent =
+    selectNationsResult.textContent = "";
+    errorMessage.textContent =
         "Please enter a valid player count (1,2,3,4,5)";
     return;
   }
   var randomSelection = getRandom(nations, playerCount);
-  var attempts = 1;
   while (!isValid(randomSelection)) {
-    attempts++;
     randomSelection = getRandom(nations, playerCount);
   }
-  selectNationsResult.textContent = randomSelection.sort();
-  debugResult.textContent = "Attempts: " + attempts;
+  randomSelection = randomSelection.sort();
+  var selectNationsText = "";
+  for (let nation of randomSelection) {
+    selectNationsText += nation + ", ";
+  }
+  selectNationsResult.textContent = selectNationsText.substring(0, selectNationsText.length - 2);
+  errorMessage.textContent = "";
 }
 
 selectNationsButton.addEventListener('click', selectNations);

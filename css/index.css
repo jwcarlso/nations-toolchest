@@ -1,52 +1,37 @@
+html {
+  margin-left: 10px;
+}
+
 body {
   width: 960px;
 }
 
-h1 {
-  font-family: "Georgia";
-}
-
-.footnote {
-  font-size: 14px;
-  width: 920px;
-}
-
 .sitetitle {
   font-size: 48px;
-  font-family: "Georgia";
-  font-style: bold;
+  font-family: 'Crimson Text', serif;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.sitesubtitle {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 28px;
-  font-family: "Georgia";
+.playerCountField {
+  width: 50px;
 }
 
-.small-info {
-  font-size: 18px;
-  font-family: "Georgia";
+.selectNationsButton {
+  background-color: midnightblue;
+  color: white;
+  width: 190px;
+  height: 40px;
+  margin-top: 12px;
 }
 
-table.navbar {
-  width: 960px;
-  height: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: #CCEEEE;
-  font-size: 24px;
-  font-family: "Georgia";
+.selectNationsResult {
+  font-weight: bold;
+  margin-top: 12px;
 }
 
-p {
-  font-size: 24px;
-  font-family: "Georgia";
-}
-
-li {
-  font-size: 24px;
-  font-family: "Georgia";
+.errorMessage {
+  color: darkred;
+  font-weight: bold;
+  margin-top: 12px;
 }

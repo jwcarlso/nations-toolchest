@@ -1,7 +1,9 @@
 <html>
 <head>
 <title>Nations Toolchest</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/index.css" />
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 <!--For Facebook-->
 <meta name="title" content="Nations Toolchest" />
 <meta name="description" content="Web frontend containing assistive tools for the Nations board game." />
@@ -17,11 +19,12 @@
 </head>
 <body>
 <div class="sitetitle">Nations Dynasties Selector vAlpha</div>
-<label for="playerCount" >Number of players: </label>
-<input type="number" id="playerCountField" class="playerCountField">
-<input type="submit" value="Select Nations!" class="selectNationsButton">
+<label for="playerCount" class="playerCountLabel">Number of players: </label>
+<input type="number" id="playerCountField" class="playerCountField" min="1" max="5">
+<br />
+<input type="submit" value="Select Nations!" class="selectNationsButton" accesskey="">
 <div class="selectNationsResult"></div>
-<div class="debugResult"></div>
+<div class="errorMessage"></div>
 <script src="script/nations_toolchest.js"></script>
 </body>
 </html>
