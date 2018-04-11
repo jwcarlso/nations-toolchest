@@ -30,7 +30,6 @@ body {
 .selectNationsResult {
   font-weight: bold;
   margin-top: 12px;
-  height: 24px;
 }
 
 .errorMessage {
