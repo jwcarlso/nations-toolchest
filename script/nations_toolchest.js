@@ -77,7 +77,8 @@ function getRandom(arr, n) {
 }
 
 function isValid(randomSelection) {
-  for (let pair of invalidPairs) {
+  for (var i = 0; i < invalidPairs.length; i++) {
+    var pair = invalidPairs[i];
     if (randomSelection.indexOf(pair[0]) >= 0
         && randomSelection.indexOf(pair[1]) >= 0) {
       return false;
