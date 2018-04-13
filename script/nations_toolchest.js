@@ -47,8 +47,8 @@ function selectNations() {
   }
   randomSelection = randomSelection.sort();
   var selectNationsText = "";
-  for (let nation of randomSelection) {
-    selectNationsText += nation + ", ";
+  for (var i = 0; i < randomSelection.length; i++) {
+    selectNationsText += randomSelection[i] + ", ";
   }
   selectNationsResult.textContent = selectNationsText.substring(0, selectNationsText.length - 2);
   errorMessage.textContent = "";
